@@ -18,7 +18,8 @@ img {
 }
 
 table tr:nth-child(1){
-    background-color: #777;
+    background-color: rgb(192, 33, 33);
+    text-align: center;
 }
 
 table tr:nth-child(odd){
