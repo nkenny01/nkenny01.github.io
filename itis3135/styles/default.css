@@ -21,3 +21,7 @@ table tr:nth-child(1){
     background-color: #777;
     color: #fff;
 }
+
+table {
+    text-align: right;
+}
