@@ -16,3 +16,8 @@ img {
     height: 300px;
     margin: 50px;
 }
+
+table tr:nth-child(1){
+    background-color: #777;
+    color: #fff;
+}
