@@ -17,9 +17,7 @@ body {
     margin: 50px;
   }
   
-  table,
-  th,
-  td {
+  table, th, td {
     font-family: 'Times New Roman', Times, serif;
     border: 1px solid black;
     text-align: right;
