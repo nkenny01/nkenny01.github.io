@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal Tables</title>
     <link href="styles/default.css" rel="stylesheet" />
+    <style>
+      h2, h3 {
+        text-align: center;
+      }
+    </style>
+
   </head>
 
   <body>
@@ -15,6 +21,7 @@
         <a href="tables.html">Tables</a> |
         <a href="forms.html">Forms</a> |
         <a href="website_evaluations.html">Web Evaluations</a> |
+        <a href="brand.html">Brand</a> |
         <a href="contract.html">Contract</a>
       </nav>
       <h1>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal</h1>
@@ -25,21 +32,23 @@
       <h2>Tables</h2>
       <h3>My Tabular Data</h3>
 
-      <ol>
-        <li>Jeff Bezos, JeffBezos@Amazon.com, 5</li>
-        <li>Michael Phelps, MPhelps@PhelpsSwim.com, 1</li>
-        <li>Freddie Mercury, FredMerc@QueenEnterprises.com, 21</li>
-        <li>Humphrey Jenkins, HumphreyJ@JenkinsAuto.com, 19</li>
-        <li>Kenny Nguyen, KennyN@NguyenConglomerate.com, 24</li>
-        <li>Daft Punk, DaftPunk@DaftPunkInc.com, 6</li>
-        <li>Zendaya Zendaya@euphoria.com, 3</li>
-      </ol>
 
+      <div style="margin-right: auto; margin-left: auto; display: table;">
+        <ol>
+          <li>Jeff Bezos, JeffBezos@Amazon.com, 5</li>
+          <li>Michael Phelps, MPhelps@PhelpsSwim.com, 1</li>
+          <li>Freddie Mercury, FredMerc@QueenEnterprises.com, 21</li>
+          <li>Humphrey Jenkins, HumphreyJ@JenkinsAuto.com, 19</li>
+          <li>Kenny Nguyen, KennyN@NguyenConglomerate.com, 24</li>
+          <li>Daft Punk, DaftPunk@DaftPunkInc.com, 6</li>
+          <li>Zendaya, Zendaya@euphoria.com, 3</li>
+        </ol>
+      </div>
 
 
       <h3>Employee Data in Simple Table</h3>
 
-      <table>
+      <table style="margin-left:auto; margin-right:auto;">
         <tr>
           <th>Name</th>
           <th>Email</th>
@@ -92,10 +101,11 @@
 
 
 
+
       <h3>Employee Data in Complex Table</h3>
 
       <figure>
-        <table>
+        <table style="margin-left:auto; margin-right:auto;">
           <tr>
             <th>Position, Branch, Section</th>
             <th>Name</th>
@@ -165,13 +175,19 @@
             <td>$70,123,000</td>
           </tr>
         </table>
-        <figcaption>Table listing company employee information</figcaption>
+        <figcaption style="text-align: center;">Table listing company employee information</figcaption>
       </figure>
 
 
     </main>
     <footer>
-      Designed by <a href="nguyenconglomerate.me/index.html">Nguyen Conglomerate</a> &copy;2022.
+      <p>Designed by <a href="nguyenconglomerate.me/index.html">Nguyen Conglomerate</a> &copy;2022.</p>
+        <a href="https://validator.w3.org/">
+              <img src="images/button_validation_html5.png" alt="HTML validator" />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/">
+              <img src="images/button_validation_css.png" alt="CSS validator" />
+            </a>
     </footer>
 
   </body>
