@@ -10,6 +10,10 @@ header {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 img {
   float: right;
   width: 300px;
