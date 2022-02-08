@@ -48,3 +48,7 @@ table tr:nth-child(even) {
 a {
   color: brown;
 }
+
+a:hover {
+  color: blue;
+}
