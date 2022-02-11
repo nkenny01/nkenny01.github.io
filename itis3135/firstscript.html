@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal First Script</title>
     <link href="styles/default.css" rel="stylesheet" />
+    <script src="scripts/defaultscripts.js"></script>
+    
   </head>
 
   <body>
@@ -12,33 +14,61 @@
       <nav>
         <a href="index.html">Homepage</a> |
         <a href="introduction.html">Introduction</a> |
-        <a href="contract.html">Contract</a> |
         <a href="tables.html">Tables</a> |
         <a href="forms.html">Forms</a> |
         <a href="website_evaluations.html">Web Evaluations</a> |
         <a href="brand.html">Brand</a> |
         <a href="stuff/BRUH MOMENT!!!.htm">CRAPPY Website</a>
-        <a href="firstscript.html">First Script</a>
+        <a href="firstscript.html">First Script</a> |
+        <a href="contract.html">Contract</a>
       </nav>
       <h1>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal</h1>
     </header>
 
 
-      <main>
+      <main style="text-align: center;">
         <h2>First Script</h2>
-        <h3>Today's date is </h3>
+        
+        <p>
+            <script>
+                var getDate = new Date();
+                document.write("current data: ");
+            </script>
+        </p>
 
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" placeholder="Enter first name here"><br><br>
+
+        <label for="emotions">How do you feel right now?: </label><br>
+        <input type="text" id="emotions" placeholder="Enter emotion here"><br><br>
+
+        
+
+        <input type="submit" id="submit" onclick = "">
+
+        <p id="emotions"></p>
+
+        <script>
+            var message = document.getElementById("emotions").value;
+            document.write(message);
+        </script>
+
+
+
+
+        <h3>Here are some functions built by Nguyen Technologies, a company under Nguyen Conglomerate:</h3>
+        
 
 
 
       </main>
       <footer>
         <p>Designed by <a href="nguyenconglomerate.me/index.html">Nguyen Conglomerate</a> &copy;2022.</p>
-        <a href="https://validator.w3.org/">
-          <img src="images/button_validation_html5.png" alt="HTML validator" />
+        <a href="https://validator.w3.org/" style="text-decoration: none;">
+          <img src="images/button_validation_html5.png" alt="HTML validator"/>
         </a>
-        <a href="https://jigsaw.w3.org/css-validator/">
-          <img src="images/button_validation_css.png" alt="CSS validator" />
+        <a href="https://jigsaw.w3.org/css-validator/" style="text-decoration: none;">
+          <img src="images/button_validation_css.png" alt="CSS validator"/>
         </a>
       </footer>
 
