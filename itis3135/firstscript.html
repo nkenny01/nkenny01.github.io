@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal First Script</title>
     <link href="styles/default.css" rel="stylesheet" />
-    <script src="scripts/defaultscripts.js"></script>
+    <script type="text/javascript" src="scripts/defaultscripts.js"></script>
     
   </head>
 
@@ -28,41 +28,103 @@
 
       <main style="text-align: center;">
         <h2>First Script</h2>
+
+
+        <button onclick="alertMessage()">Check if scripts work</button>
         
         <p>
             <script>
-                var getDate = new Date();
-                document.write("current data: ");
+                var today = new Date();
+                var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+                var month = ["January", "February", "March", "April", "May", "June", 
+                             "July", "August", "September", "October", "November", "December"];
+                document.write("Today is " + today.getHours() + ":" + today.getMinutes()
+                               + " on " + days[today.getDay()] + ", " + today.getDay()
+                               + " " + month[today.getMonth()] + ", " + today.getFullYear());
             </script>
         </p>
 
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" placeholder="Enter first name here"><br><br>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" placeholder="Enter first name here" value=""><br><br>
 
-        <label for="emotions">How do you feel right now?: </label><br>
-        <input type="text" id="emotions" placeholder="Enter emotion here"><br><br>
+            <label for="emotions">How do you feel right now?: </label><br>
+            <input type="text" id="emotions" placeholder="Enter emotion here" value=""><br><br>
+
+            
+
+            
+        </form>
+
+        <button onclick="personalMessage()">Submit</button>
+        <p id="message"></p>
+
+        <p>
+        <script>
+            function personalMessage() {
+                var name = document.getElementById("fname").value;
+                var emotion = document.getElementById("emotions").value;
+                var text = "";
+                text += "Nguyen Conglomerate welcomes you, " + name + "! " +
+                                "We are glad you are feeling " + emotion + "."
+                
+                document.getElementById("message").innerHTML = text;
+            }
+        </script>
+        </p>
 
         
 
-        <input type="submit" id="submit" onclick = "">
-
-        <p id="emotions"></p>
-
-        <script>
-            var message = document.getElementById("emotions").value;
-            document.write(message);
-        </script>
 
 
 
+        <h3>Here are some functions built by Nguyen Technologies</h3>
 
-        <h3>Here are some functions built by Nguyen Technologies, a company under Nguyen Conglomerate:</h3>
+        <label for="temperature">Convert to Fahreheit or Celsius</label><br>
+        <input type="text" id="temperature" placeholder="Enter a number here" value=""><br><br>
+        
+        <button onclick='convertToCelsius(document.getElementById("temperature").value)'>Convert To Celsius</button>
+        <button onclick='convertToFahrenheit(document.getElementById("temperature").value)'>Convert To Fahrenheit</button>
+        
+
+        
+        <p>
+
+        <label for="number1">Enter your first number:</label><br>
+        <input type="text" id="number1" placeholder="Enter a number here" value="">
+        </p>
+
+        <p>
+        <label for="number2">Enter your second number:</label><br>
+        <input type="text" id="number2" placeholder="Enter a number here" value="">
+        </p>
+        
+        
+        <p><button onclick='product(document.getElementById("number1").value
+                            , document.getElementById("number2").value)'>Calculate Product</button></p>
+        
+        
+        
+        <p>
+        Other functions:
+        <button onclick="headsOrTails()">Heads or Tails</button>
+        <button onclick="randomNumGenerator()">Random Number Generator</button>
+        </p>
+
         
 
 
 
       </main>
+
       <footer>
+        <nav>
+            <a href = "nkenny01.github.io/index.html">UNCC Homepage</a> |
+            <a href = "https://github.com/nkenny01">Repository</a> |
+            <a href = "https://nkenny01.github.io/">Github.io</a> |
+            <a href = "https://www.freecodecamp.org/nkenny01">FreeCodeCamp</a> |
+            <a href = "https://www.linkedin.com/in/kenny-nguyen-37157a1b7/">LinkedIn</a> |
+        </nav>
         <p>Designed by <a href="nguyenconglomerate.me/index.html">Nguyen Conglomerate</a> &copy;2022.</p>
         <a href="https://validator.w3.org/" style="text-decoration: none;">
           <img src="images/button_validation_html5.png" alt="HTML validator"/>
