@@ -34,6 +34,10 @@ function randomNumGenerator() {
     alert(parseInt(Math.random() * 101));
 }
 
+/* function that returns an alert about polygon size
+ / and returns boolean to either enter while loop again (false)
+ / or exit the loop (true) the function is being called in.
+*/
 function getShape(index) {
     switch (index) {
         case 0:
@@ -75,6 +79,10 @@ function getShape(index) {
     }
 }
 
+/* Function that verifies the user input and changes
+ / input into an integer if in range or returns an
+ / alert saying entry is invalid
+*/
 function validateEntry(value) {
     if (value >= -10 && value <= 10) {
         if (Number.isInteger(value)) {
