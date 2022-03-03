@@ -3,8 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal Forms</title>
-    <link href="styles/default.css" rel="stylesheet" />
+    <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal / Calculator FCC</title>
+    <link href="styles/default.css" rel="stylesheet"/>
+    <script src="scripts/calculator_fcc.js"></script>
   </head>
 
   <body>
@@ -25,57 +26,34 @@
       </nav>
       <h1>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal</h1>
     </header>
-
-
     <main>
-      <h2>Forms</h2>
+      <h2>Calculator FCC</h2>
 
-      <form>
-      <label for="fname">First Name:</label><br>
-      <input type="text" id="fname"><br>
-
-      <label for="lname">Last Name:</label><br>
-      <input type="text" id="lname"><br>
-
-      <label for="phone">Phone Number:</label><br>
-      <input type="text" id="phone"><br>
-
-      <label for="email">Email:</label><br>
-      <input type="text" id="email"><br>
-
-      <label>Check off all branches you would like to work for</label><br>
-
-      <input type="checkbox" id="corporate">
-      <label for="corporate">Corporate</label><br>
-
-      <input type="checkbox" id="sales">
-      <label for="sales">Sales</label><br>
-
-      <input type="checkbox" id="tech">
-      <label for="tech">Tech</label><br>
-
-
-      <label>What is your preferred method of contact?</label><br>
-      <input type="radio" id="emailpref">
-      <label for="emailpref">Email</label><br>
-      <input type="radio" id="phonepref">
-      <label for="emailpref">Phone</label><br>
-
-      <label for="interest">How did you hear about us?</label><br>
-      <select name="interest" id="interest">
-        <option value="blank">----</option>
-        <option value="jobboards">Job Boards</option>
-        <option value="ads">Advertisement</option>
-        <option value="others">Other</option>
-      </select><br>
-
-      <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-    </form>
+      <div class="calculator">
+          <div class="calculator_display">0</div>
+          <div class="calculator_keys">
+            <button class="key-operator" data-action="add">+</button>
+            <button class="key-operator" data-action="subtract">-</button>
+            <button class="key-operator" data-action="multiply">&times;</button>
+            <button class="key-operator" data-action="divide">÷</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">AC</button>
+            <button class="key-equal" data-action="calculate">=</button>
+          </div>
+      </div>
 
 
-
-
+    
     </main>
     <footer>
       <nav>
