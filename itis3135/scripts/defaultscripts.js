@@ -100,3 +100,16 @@ function validateEntry(value) {
         alert("This is invalid. Please enter an integer from 0-10:")
     }
 }
+
+
+function polygon() {
+    var userEntry;
+
+           // Boolean condition for do while loop
+           var counter = false;
+           do {
+                  userEntry = prompt("The Kiwi Narwhal asks you to enter a number from 1-10 or its negative counter"
+                                      + "parts and then we will tell you the name of a polygon with that number of sides!");   
+                  counter = getShape(validateEntry(parseInt(userEntry)));
+           } while (counter == false);
+}
