@@ -3,9 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal / Calculator Try</title>
+    <title>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal / Arrays</title>
     <link href="styles/default.css" rel="stylesheet"/>
-    <script src="scripts/calculator_try.js"></script>
+    <script src="scripts/arrays.js"></script>
   </head>
 
   <body>
@@ -27,36 +27,44 @@
       </nav>
       <h1>Kenny Nguyen / ITIS 3135 / Kiwi Narwhal</h1>
     </header>
-    <main>
-      <h2>Calculator Try</h2>
+    <main style="text-align: center;">
+      <h2>Arrays</h2>
+    
 
+        <form>
+            <label for="employee">Pick an employee:</label><br>
+            <select id="employee" autofocus="autofocus">
+                <option value="Jeff Bezos">Jeff Bezos</option>
+                <option value="Michael Phelps">Michael Phelps</option>
+                <option value="Freddie Mercury">Freddie Mercury</option>
+                <option value="Humphrey Jenkins">Humphrey Jenkins</option>
+                <option value="Kenny Nguyen">Kenny Nguyen</option>
+                <option value="Daft Punk">Daft Punk</option>
+                <option value="Zendaya">Zendaya</option>
+            </select>
+        </form><br><br>
 
+        <button type="button" onclick="addSalary()">Add Salary</button><br><br>
 
-    <div class="calculatorbutton" style="text-align: center;">
-        <button type="button">0</button>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button" onclick="add()">+</button>
-        <button type="button" onclick="subtract()">-</button>
-        <button type="button" onclick="multiply()">x</button>
-        <button type="button" onclick="divide()">÷</button>
-        <button type="button">.</button>
-        <button type="button">+/-</button>
-        <button type="button">Clear</button>
-    </div>
-    <br>
+        <button type="button" onclick="reset()">Reset List</button><br><br>
+        
+        <button type="button" onclick="displayResults()">Display Results</button><br><br>
+        
+        <p id="results1"></p>
+        <p id="results2"></p><br>
+        
 
+        <button type="button" onclick="displaySalary()">Display Salary</button><br><br>
 
+          
+        <table id="results_table"></table>
+        
 
+        <br><br><br>
 
-
+      
+    
+    
     
     </main>
     <footer>

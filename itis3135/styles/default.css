@@ -28,8 +28,11 @@ footer {
 
 
 table, th, td {
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Times New Roman', Times, serif;
   border: 1px solid black;
+
   text-align: right;
   border-collapse: collapse;
   font-weight: bold;
@@ -49,6 +52,7 @@ table tr:nth-child(odd) {
 
 table tr:nth-child(even) {
   background-color: rgb(114, 110, 110);
+  color: #EEEBEB;
 }
 
 a {
