@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="Nguyen.Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th scope="col">TYPE</th>
+          <th scope="col">PRODUCT</th>
+          <th scope="col">FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Birthday Candles</th>
+          <td><img src="images/Birthday-Candles.jpg"></src></td>
+          <td>1. Comes in a range of fun, vibrant colors<br>
+              2. Small and slender forms allows you to add as many or as few of them to a dessert as you desire<br>
+              3. Offers a way to personalize customers' desserts on birthdays ad anniversaries
+          </td>   
+        </td>
+        </tr>
+        <tr>
+            <th scope="row">Votives</th>
+            <td><img src="images/voltives.jpeg"></td>
+            <td>1. Inexpensive and easy to use<br>
+                2. Bigger than tea lights to provide longer burn times, making them better for longer events
+            </td>
+          </tr>
+          <tr>
+              <th scope="row">Taper Candles</th>
+              <td><img src="images/taper-candles.jpg"></td>
+              <td>1. Commonly known as window Candles<br>
+                  2. Long, slender constructions add dimension to table tops
+              </td>
+            </tr>
+      </tbody>
+    </table> <br>
+     <!--Add the form here-->
+     <h2>Enter your name and phone number to win a gift!</h2>
+     <form>
+      
+      <label id="name">Enter your name here:</label> 
+      <input type="text" id="name" aria-required="true" required><br>
+
+      <label id="number">Enter your phone number here:</label> 
+      <input type="text" id="number" aria-required="true" required><br>
+
+      <input type="submit" value="Submit" action="#">
+     </form>
+    
+   
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
