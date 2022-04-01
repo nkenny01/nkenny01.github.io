@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Kenny Nguyen's Swimming Hobby Home</title>
+
+        <style>
+            
+
+            body {
+                background: lightblue;
+                color: black;
+                font-family: sans-serif;
+                margin-right: 150px;
+                margin-left: 150px;
+                
+            }
+
+            header {
+                margin-top: 30px;
+                text-align: center;
+            
+            }
+
+
+            h1, h2, footer, .GIF {
+                text-align: center;
+            }
+
+
+            .trophy, .freestyle, .butterfly, .backstroke, .breaststroke, .swim {
+                width: 300px;
+                height: 300px;
+
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+        
+            button {
+                background-color: #36AABC;
+                border: none;
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+
+        
+
+        </style>
+
+        <script>
+            let pages = ['index', 'aboutme', 'freestyle', 'backstroke', 'breaststroke', 'butterfly'];
+
+            function changepage(page) {
+                for (let i = 0; i < pages.length; i++) {
+                    if (page === pages[i]) {
+                        document.getElementById(pages[i]).style.display = 'initial';
+                    }
+                    else {
+                        document.getElementById(pages[i]).style.display = 'none';
+                    }
+                }
+            }
+        </script>
+    
+    </head>
+
+
+    <body>
+
+
+        <header>
+
+            <h1>Kenny Nguyen | ITIS 3135 | Midterm</h1>
+            <h2>Swimming</h2>
+            <nav>
+                
+                <button onclick="changepage('index')">Home</button>
+                <button onclick="changepage('aboutme')">About Me</button>
+                <button onclick="changepage('freestyle')">Freestyle</button>
+                <button onclick="changepage('backstroke')">Backstroke</button>
+                <button onclick="changepage('breaststroke')">Breaststroke</button>
+                <button onclick="changepage('butterfly')">Butterfly</button>
+
+            </nav>
+            <br>
+
+        </header>
+
+
+        <main>
+        
+            <section id="index">
+
+                <h2>Home</h2>
+
+                
+
+                <h3>
+
+
+                    <div class="GIF">
+                        <img src="images/swimhome.gif" alt="Swimming GIF" class="swim">
+                        <img src="images/michaelphelps.gif" alt="Michael Phelps" class="swim"> <br><br>
+                    </div>
+
+
+                    Welcome to my homepage where I get to talk about my love for swimming! Feel free to look around by
+                    clicking on the navigation bar above with all sorts of stuff related to swimming. From my personal history
+                    to all of the different strokes, this website is all about learning about swimming and my personal background
+                    behind these strokes. Hopefully, I can get you to try swimming out if you're not already doing so.
+
+                </h3>
+                
+
+            </section>
+            
+            
+            
+            <section id="aboutme" style="display: none">
+                
+                <h2>About Me</h2>
+
+        
+                
+                <h3>
+
+
+                    <div class="GIF">
+                        <img src="images/trophy.JPG" alt="trophy" class="trophy">
+                        <img src="images/trophies.JPG" alt="trophies" class="trophy"> 
+                    </div> <br>
+                    
+                    I first began swimming when I was 7 years old. It was the summer going into 2nd grade
+                    when my Dad drove me to the pool with my cousin thinking we were going there for fun.
+                    However, my dad had other plans for us and signed us up for the summer swim team without us
+                    knowing. We didn't have a choice so we decided to stick with it. On my first day, me and my
+                    cousin were already passing kids from the age groups above ours even though we had joined 
+                    late compared to them. We won many ribbons and medals from the swim meets and 
+                    it was always fun. I joined the swim team every summer afterwards until middle school
+                    came along. I got bored of the sport and was more interested in Tae Kwon Do instead so I ended taking up
+                    taking a massive break from swimming until I came back in high school. <br><br>
+
+                    Once high school came along, my Dad once again forced me to join even though I hated swimming 
+                    at this point. On my first day, I was the slowest in my group 
+                    and slower than the age groups below me. I wanted out of the team but I decided to stick with it until
+                    it ended. By the end, I was still slow but it did manage to bring back my love for swimming again. Now,
+                    I like to swim casually as I don't want a hobby of mine to feel forced but instead be something
+                    I enjoy.
+                
+                </h3>
+
+            </section>
+
+            <section id="freestyle" style="display: none">
+                
+                <h2>Freestyle</h2>
+
+                
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/Freestyleirl.gif" alt='Freestlye in real life' class="freestyle">
+                        <img src="images/freestyleslowed.gif" alt='Slowed freestyle video' class="freestyle">
+                    </div> <br>
+                    
+                    
+                    Freestyle is one of the main four competitive swimming strokes and the most common stroke
+                    you see people use when they are casually swimming. Freestyle is a stroke where your arms
+                    come up above water and essentially "pulling" yourself forward against the water and stretching
+                    your entire body forward for extended reach while also repeatedly kicking your legs up and down.
+
+                    <br><br>
+
+                    Freestyle has always been my favorite stroke as it was my best stroke and overall just fun to perform.
+                    It was also fun to watch as freestyle took the least amount of time compared to the others but was always
+                    intense as swimmers were always going toe-to-toe with each other. It also translates into casual swimming
+                    as people only use freestyle when swimming. 
+
+                </h3>
+            
+            
+            </section>
+
+            <section id="breaststroke" style="display: none">
+                <h2>Breaststroke</h2>
+
+                
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/Breaststrokeirl.gif" class="breaststroke" alt="Breasstroke during competition gif">
+                        <img src="images/TopDownbreaststroke.gif" class="breaststroke" alt="Breaststroke gif">
+                    </div><br>
+                    
+                    Breaststroke is one of the main four competitive swimming strokes. Breaststroke is a stroke where
+                    you have your hands near your chest underwater and you thrust it forward. After this,
+                    you bring your arms back to starting position near your chest by "splitting the water". 
+                    With kicking, you kick your legs outwards and bring it back by straightening it out first
+                    and then slighly bending the knee so that the foot is above your knee.
+
+                    <br><br>
+
+                    I was initially really bad at breaststroke when I was kid. I didn't understand the movement and technique
+                    of breaststroke, leaving with me times slower than desired. However, as I grew older, breaststroke became
+                    easier and I was able to do them easily. It really is a cool stroke to perform as you're imitating a frog (at
+                    least that's the analogy my coaches used) and is always fun to watch as well.
+                
+                </h3>
+
+                
+
+            </section>
+
+            <section id="backstroke" style="display: none">
+                <h2>Backstroke</h2>
+
+                
+
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/backstroke.gif" class="backstroke" alt="Backstroke gif">
+                        <img src="images/backstrokeirl.gif" class="backstroke" alt="Backstroke during competition gif">
+                    </div><br>
+
+
+                    Backstroke is one of the main four competitive swimming strokes. Backstroke is a stroke where
+                    your back is facing towards the ground and you bring your arms up from the water near your hips
+                    and bring it up all the way over until your arm grazes your head while also repeatedly kicking
+                    up and down.
+
+
+                    <br><br>
+
+                    I like backstroke as it was always cool to see how people can get such great times while also being 
+                    elegant in the sense that the water was hardly splashing but rather "gliding" with them. Only thing I don't 
+                    like about backstroke is the fact that water can easily go up your nose and make you start coughing if your
+                    body falls too low under the water.
+                </h3>
+
+                
+            </section>
+
+            <section id="butterfly" style="display: none">
+                <h2>Butterfly</h2>
+
+                
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/butterflyirl.gif" class="butterfly" alt="1st butterfly gif during competition ">
+                        <img src="images/butterflyirl2.gif" class="butterfly" alt="2nd butterfly gif during competition ">
+                    </div> <br>
+
+
+                    Butterfly is one of the main four competitive swimming strokes. Butterfly is a stroke where
+                    you bring both arms forward simutaneously and kicking "Dolphin" style, where you keep your legs
+                    together.
+
+                    <br><br>
+
+                    Butterfly was always my least favorite. It's the stroke that requires the most strength and endurance out
+                    of you and would always tire me out. Whenever I would go look at my replays that someone had recorded 
+                    during this event, I would look like a flopping fish trying to get to finish line. It also sucked because it
+                    was the first stroke during the individual medley or IM and performing butterfly always puts me in a bad mood.
+
+                </h3>
+            
+            </section>
+
+        </main>
+
+
+        <br><br>
+        <footer>
+            <p>Designed by <a href="nguyenconglomerate.me/index.html">Nguyen Technologies</a> &copy;2022.</p>
+            <a href="https://validator.w3.org/check?uri=referer" style="text-decoration: none;">
+              <img src="../images/button_validation_html5.png" alt="HTML validator"/>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" style="text-decoration: none;">
+              <img src="../images/button_validation_css.png" alt="CSS validator"/>
+            </a>
+        </footer>
+    </body>
+
+
+    
+
+
+
+
+
+
+</html>

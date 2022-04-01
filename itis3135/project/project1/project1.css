@@ -1,4 +1,126 @@
 body {
-    background: #FFE5B4;
+    background: #4B8BBE;
+    color: white;
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+h1, h2, footer {
+    text-align: center;
+}
+
+a {
+  color: #FFE873;
+}
+
+
+/* CSS for Navigation Pane */
+#topnav {
+    background-color: #FFE873;
+    overflow: hidden;
+    
+}
+  
+
+  #topnav a {
+    float: left;
     color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  #topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  #topnav a.active {
+    background-color: #306998;
+    color: white;
+  }
+
+/* -- End of Navigation Pane CSS --- */
+
+
+
+.center_text {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.column_text {
+  margin-left: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex: 50%; 
+  padding: 10px; 
+  height: 300px;
+}
+
+.guido {
+  width:300px; 
+  height: 300px;
+}
+
+.lessoncolumn {
+  flex: 50%; 
+  padding: 10px; 
+  height: 800px;
+}
+
+
+/* Start of Slideshow CSS */
+
+.container {
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: #666 solid 1px;
+}
+
+.slider-inner img {
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+
+.slider-inner img.activeimg {
+  display: inline-block;
+}
+
+.prev, .next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.prev {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
 }

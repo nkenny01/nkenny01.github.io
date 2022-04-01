@@ -122,3 +122,62 @@ a:hover {
   grid-column: -2;
   grid-row: 2 / span 4;
 }
+
+.container {
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: #666 solid 1px;
+}
+
+.slider-inner img {
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+
+.slider-inner img.activeimg {
+  display: inline-block;
+}
+
+.prev, .next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.prev {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
+}
+
+.navimage {
+  width: 100px;
+  height: 100px;
+}
+
+#navlist li {
+  display: inline-block;
+}
+
+#activeswapimage {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
