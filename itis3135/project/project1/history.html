@@ -3,8 +3,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Intro To Python | Home</title>
-        <link href="project1.css" rel="stylesheet">
+        <title>Intro To Python | History</title>
+        <link rel="stylesheet" href="styles/project1.css">
+
+        <link href="superfish/dist/css/superfish.css" rel="stylesheet" media="screen">
+        <script src="superfish/dist/js/superfish.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="scripts/historyajax.js"></script>
     </head>
 
 
@@ -12,42 +17,21 @@
         
         <header>
 
-            <div id="topnav">
-                <nav>
-                    <a href="home.html"><strong>Home</strong></a>
-                    <a class="active" href="history.html"><strong>History</strong></a>
-                    <a href="examples.html"><strong>Examples</strong></a>
-                    <a href="pythonbasics1.html"><strong>Lesson 1</strong></a>
-                    <a href="pythonbasics2.html"><strong>Lesson 2</strong></a>
-                </nav>
-            </div>
+            <div data-include="components/header.html"></div>   
         
         </header>
 
         <main>
-            <h1>History</h1>
+            <h1>Intro To Python</h1>
+            <h2>History</h2>
 
 
                 <div class="flex">
                     
                     <div class="column column_text">
-                        <p>
-                            Python first appeared back in February 20th, 1991 by a Dutch programmer 
-                            named Guido van Rossum. He initially created Python because he wanted to create
-                            a project that would keep him occupied during the week of Christmas back in 1989.
-                            Guido wanted to develop a language similar like ABC, which was a language he had
-                            worked on previously, with the goal of being able to interact with the OS and
-                            developing OS utilities unlike ABC. <br><br>
-                            
-                            
-                            After some time, Python was gaining some momentum as programmers were getting tired of writing C programs or Unix shell programs for their
-                            tasks. People began to help out by providing feedback, bug fixes, and other ways to help
-                            improve the language itself. <br><br>
-                            
-                            Now, Python can be found everywhere from websites to games
-                            and will continue to do so for a while as Python is a very accessible language that any
-                            new or veteran programmers can delve into.
-                        </p>
+                        <!-- Uses JSON to retrieve information from history.json file-->
+                        <div id="info"></div>
+                        
                     
 
                     <p>For more information on Wikipedia about either Python or Guido van Rossum, click the links below: </p>
@@ -72,13 +56,9 @@
         </main>
 
         <footer>
-            <a href="https://validator.w3.org/check?uri=referer" style="text-decoration: none;">
-                <img src="../../images/button_validation_html5.png" alt="HTML validator"/>
-              </a>
-              <a href="https://jigsaw.w3.org/css-validator/check/referer" style="text-decoration: none;">
-                <img src="../../images/button_validation_css.png" alt="CSS validator"/>
-              </a>
+            <div data-include="components/footer.html"></div>
         </footer>
+        <script src="scripts/HTMLInclude.js"></script>
     </body>
 
 </html>

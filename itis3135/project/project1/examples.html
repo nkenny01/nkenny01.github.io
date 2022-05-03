@@ -3,36 +3,27 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Intro To Python | History</title>
-        <link href="project1.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Intro To Python | Examples</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/project1.css">
         <script src="scripts/projectslideshow.js"></script>
+
+        <link href="superfish/dist/css/superfish.css" rel="stylesheet" media="screen">
+        <script src="superfish/dist/js/superfish.js"></script>
     </head>
 
 
     <body>
         
         <header>
-
-            <div id="topnav">
-                <nav>
-                    <a href="home.html"><strong>Home</strong></a>
-                    <a href="history.html"><strong>History</strong></a>
-                    <a class="active" href="examples.html"><strong>Examples</strong></a>
-                    <a href="pythonbasics1.html"><strong>Lesson 1</strong></a>
-                    <a href="pythonbasics2.html"><strong>Lesson 2</strong></a>
-                </nav>
-            </div>
-
-
-
-        
+            <div data-include="components/header.html"></div>     
         </header>
 
         <main>
-            <h1>Examples</h1>
-
-
+            <h1>Intro To Python</h1>
+            <h2>Examples</h2>
 
             
             <p class="center_text">
@@ -44,21 +35,30 @@
 
             <br><br>
 
-            <div class="container">
-                <div class="slider-outer">
-                    <img src="images/arrow-left.png" class="prev" alt="Prev">
-                    <div class="slider-inner">
-                        <img src="images/netflix.jpg" class="activeimg" alt="Netflix">
-                        <img src="images/sims4.jpg" alt="The Sims 4">
-                        <img src="images/Spotify.jpg" alt="Spotify">
-                        <img src="images/instagram.jpg" alt="Instagram">
-                        <img src="images/toontown.jpg" alt="Toontown Online">
-                    </div>
-                    <img src="images/arrow-right.png" class="next" alt="Next">
+            <!-- Creates a slideshow using bxslider plugin -->
+            <div id="slider">
+                <div>
+                    <img src="images/netflix.jpg" alt="" title="Netflix">
+                </div>
+                
+                <div>
+                    <img src="images/toontown.jpg" alt="" title="Toontown">
+                </div>
+                
+                <div>
+                    <img src="images/instagram.jpg" alt="" title="Instagram">
+                </div>
+
+                <div>
+                    <img src="images/Spotify.jpg" alt="" title="Spotify">
+                </div>
+                
+                <div>
+                    <img src="images/sims4.jpg" alt="" title="The Sims 4">
                 </div>
             </div>
 
-            <h2 id="caption">Netflix</h2>
+            <h2 id="caption"></h2>
             
 
 
@@ -68,13 +68,9 @@
 
 
         <footer>
-            <a href="https://validator.w3.org/check?uri=referer" style="text-decoration: none;">
-                <img src="../../images/button_validation_html5.png" alt="HTML validator"/>
-              </a>
-              <a href="https://jigsaw.w3.org/css-validator/check/referer" style="text-decoration: none;">
-                <img src="../../images/button_validation_css.png" alt="CSS validator"/>
-              </a>
+            <div data-include="components/footer.html"></div>
         </footer>
+        <script src="scripts/HTMLInclude.js"></script>
     </body>
 
 

@@ -25,7 +25,25 @@ footer {
   text-align: center;
 }
 
+.img {
+  width:700px;
+  height:300px;
+  text-align: center;
+}
 
+.center {
+  text-align: center;
+}
+
+.nodecoration {
+  text-decoration: none;
+}
+
+.employeetable {
+  margin-right: auto; 
+  margin-left: auto; 
+  display: table;
+}
 
 table, th, td {
   margin-left: auto;

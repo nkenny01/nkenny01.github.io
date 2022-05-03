@@ -38,11 +38,6 @@ a {
     background-color: white;
     color: black;
   }
-  
-  #topnav a.active {
-    background-color: #306998;
-    color: white;
-  }
 
 /* -- End of Navigation Pane CSS --- */
 
@@ -78,49 +73,30 @@ a {
   height: 800px;
 }
 
-
-/* Start of Slideshow CSS */
-
-.container {
-  width: 540px;
-  margin: 40px auto;
-  overflow: auto;
+.bx-wrapper {
+  background: #4B8BBE;
+  border: 5px solid #4B8BBE;
+  box-shadow: none;
+  margin: 0 auto;
 }
 
-.slider-inner {
-  width: 500px;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  float: left;
-  padding: 3px;
-  border: #666 solid 1px;
+.center {
+  text-align: center;
 }
 
-.slider-inner img {
-  display: none;
-  width: 500px;
-  height: 300px;
+.lesson_images {
+  border: 5px solid black;
 }
 
-.slider-inner img.activeimg {
-  display: inline-block;
+.nodecoration {
+  text-decoration: none;
 }
 
-.prev, .next {
-  float: left;
-  margin-top: 130px;
-  cursor: pointer;
-}
 
-.prev {
-  position: relative;
-  margin-right: -45px;
-  z-index: 100;
-}
 
-.next {
-  position: relative;
-  margin-left: -45px;
-  z-index: 100;
-}
+
+
+
+
+
+
